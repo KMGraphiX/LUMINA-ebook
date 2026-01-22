@@ -77,7 +77,6 @@ export default function Footer() {
                 <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6">
                     <div className="flex flex-col md:flex-row items-center gap-2 md:gap-6">
                         <p className="text-slate-400 text-sm">
-                            © 2026 Lumina Pure Reader. All rights reserved.
                         </p>
                         <div className="hidden md:block w-1 h-1 bg-slate-300 rounded-full" />
                         <p className="text-sm font-medium text-slate-500">
