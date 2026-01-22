@@ -1,0 +1,42 @@
+{
+    "user": {
+        "name": "Musthaq Ahmed",
+        "membership": "Annual Sage",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Musthaq"
+    },
+    "stats": {
+        "dailyGoal": "45/60 min",
+        "streak": 12,
+        "booksRead": 154,
+        "pagesToday": 82
+    },
+    "currentlyReading": {
+        "id": 1,
+        "title": "The Psychology of Money",
+        "author": "Morgan Housel",
+        "progress": 65,
+        "timeLeft": "2h 15m",
+        "color": "bg-indigo-600",
+        "image": "https://images.unsplash.com/photo-1592492159418-39f319320569?w=400"
+    },
+    "library": [
+        {
+            "id": 101,
+            "title": "Deep Work",
+            "progress": 20,
+            "image": "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=400"
+        },
+        {
+            "id": 102,
+            "title": "Sapiens",
+            "progress": 0,
+            "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400"
+        },
+        {
+            "id": 103,
+            "title": "Dune",
+            "progress": 85,
+            "image": "https://images.unsplash.com/photo-1531901599141-df5283aeaa40?w=400"
+        }
+    ]
+}
