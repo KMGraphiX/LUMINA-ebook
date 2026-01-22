@@ -2,7 +2,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Star, ChevronLeft, ShoppingBag, Share2, ShieldCheck, Truck } from 'lucide-react';
 
-export default function ProductDetail({ books }) {
+export default function ProductDetail({ books, onAddToCart }) {
     const { id } = useParams();
     const navigate = useNavigate();
     const book = books.find(b => b.id === parseInt(id));
@@ -66,7 +66,7 @@ export default function ProductDetail({ books }) {
                         </div>
 
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <button className="flex-1 bg-slate-900 text-white py-6 rounded-3xl font-black text-xl flex items-center justify-center gap-3 hover:bg-indigo-600 transition-all shadow-2xl shadow-indigo-100">
+                            <button onClick={() => onAddToCart(book)} className="flex-1 bg-slate-900 text-white py-6 rounded-3xl font-black text-xl flex items-center justify-center gap-3 hover:bg-indigo-600 transition-all shadow-2xl shadow-indigo-100">
                                 <ShoppingBag size={24} /> Add to Cart — ${book.price}
                             </button>
                             <button className="p-6 border border-slate-200 rounded-3xl hover:bg-slate-50 transition-all text-slate-500 hover:text-indigo-600">

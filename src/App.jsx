@@ -21,10 +21,7 @@ import { ALL_BOOKS } from './data/books';
 export default function App() {
     const [searchQuery, setSearchQuery] = useState('');
     const [isCartOpen, setIsCartOpen] = useState(false);
-    const [cartItems, setCartItems] = useState([
-        { id: 1, title: "The Midnight Library", author: "Matt Haig", price: 18.99, image: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=800" },
-        { id: 2, title: "Atomic Habits", author: "James Clear", price: 22.50, image: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=800" }
-    ]);
+    const [cartItems, setCartItems] = useState([]);
 
     const location = useLocation();
 
@@ -91,7 +88,7 @@ export default function App() {
                     {/* PRODUCT DETAIL */}
                     <Route
                         path="/product/:id"
-                        element={<ProductDetail books={ALL_BOOKS} />}
+                        element={<ProductDetail books={ALL_BOOKS} onAddToCart={addToCart} />}
                     />
 
                     {/* DASHBOARD */}
